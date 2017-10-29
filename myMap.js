@@ -3,6 +3,25 @@ var map_manager = {
     "map_items": []
 }
 
+function query_pokemon_data() {
+    var bounds = map_manager.map.getBounds();
+    var apigClient = apigClientFactory.newClient();
+    var params = {
+        north: bounds.getNorth(),
+        south: bounds.getSouth(),
+        east: bounds.getEast(),
+        west: bounds.getWest()
+    };
+    apigClient.mapPokemonGet(params, {}, {})
+        .then(function(result){
+            console.log(result)
+        }).catch( function(result){
+            //This is where you would put an error callback
+        });
+}
+
+query_pokemon_data();
+
 map_manager.map_items = [
     {
         "pokemon_id": 12,
