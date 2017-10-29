@@ -35,7 +35,7 @@ function loadMapScenario() {
     });
     map_manager.map = map;
     query_pokemon_data();
-    window.setInterval(query_pokemon_data, 5000);
+    window.setInterval(query_pokemon_data, 1000);
     window.setInterval(refresh_pokemon, 1000);
 }
 
