@@ -3,7 +3,7 @@ function loadMapScenario() {
         credentials: 'Apho_fBsREzpr_3XF00IG0TFAznxtp2mTE_6asHkHJTsylYXrt0lmavrW8ED0dvl'
     });
     var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), 
-                                             { icon: 'https://github.com/chenchen2018/pokemongo-frontend/tree/master/pushpins/1.png',
+                                             { icon: 'https://github.com/chenchen2018/pokemongo-frontend/blob/master/pushpins/1.png',
         });
     map.entities.push(pushpin);
 }
