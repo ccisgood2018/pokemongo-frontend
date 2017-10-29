@@ -53,5 +53,5 @@ function refresh_pokemon() {
     // 2. remove old pushpins
     map_manager.map.layers.clear();
     // 3. add new pushpins
-    map_manager.map.insert(layer);
+    map_manager.map.layers.insert(layer);
 }
