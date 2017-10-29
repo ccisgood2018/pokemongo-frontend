@@ -20,8 +20,6 @@ function query_pokemon_data() {
         });
 }
 
-query_pokemon_data();
-
 map_manager.map_items = [
     {
         "pokemon_id": 12,
@@ -51,6 +49,7 @@ function loadMapScenario() {
         credentials: 'Apho_fBsREzpr_3XF00IG0TFAznxtp2mTE_6asHkHJTsylYXrt0lmavrW8ED0dvl'
     });
     map_manager.map = map;
+    query_pokemon_data();
     window.setInterval(refresh_pokemon, 1000);
 }
 
