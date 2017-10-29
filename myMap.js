@@ -20,21 +20,6 @@ function query_pokemon_data() {
         });
 }
 
-map_manager.map_items = [
-    {
-        "pokemon_id": 12,
-        "expire": 1509294548,
-        "longitude": -73.45,
-        "latitude": 40.75
-    },
-    {
-        "pokemon_id": 2,
-        "expire": 1509294548,
-        "longitude": -73.46,
-        "latitude": 40.75
-    }
-]
-
 function get_count_down_from_timestamp(expire) {
     var now_time = new Date().getTime() / 1000;
     var time_left = expire - now_time;
