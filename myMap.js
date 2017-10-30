@@ -73,7 +73,7 @@ function refresh_pokemon_data() {
   var body = { };
   var additionalParams = { };
  
-  apigClient.mapPokemonsGet(params, body, additionalParams)
+  apigClient.mapPokemonGet(params, body, additionalParams)
     .then(function(result){
         //This is where you would put a success callback
         map_manager.map_items = result.data;
