@@ -15,7 +15,7 @@ function query_pokemon_data() {
     apigClient.mapPokemonGet(params, {}, {})
         .then(function(result){
             map_manager.map_items = result.data;
-            console.log(map_items);
+            console.log(map_manager.map_items);
         }).catch( function(result){
             console.log(result);
         });
